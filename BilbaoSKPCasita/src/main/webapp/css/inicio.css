@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+
+/*________________________HEADER___________________________*/
+/*_________________________HTML___________________________*/
+html, body {
+    margin: 0;
+    height: 120%;
+    font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#entrada {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 50vw;
+    min-height: 400px;
+    max-height: 650px; 
+    min-width: 300px;
+    color: #eee;
+}
+
+#entrada:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 40%, rgba(27, 32, 48, 1) 100%);
+}
+
+#entrada:before {
+    content: "";
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    scale: (1.0, 1.0);
+    transform: translateZ(0);
+    background: #1B2030 url(../img/tiro-angulo-escala-grises-arboles-altos-medio-bosque-atardecer.png) 50% 0% no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    animation: grow 360s linear 10ms infinite;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+}
+
+
+#infoNaro {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+#infoNaro {
+    width: 100%;
+    padding: 20% 10% 0 10%;
+    text-align: center;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Fredoka', sans-serif;
+}
+
+#infoNaro h2 {
+    font-size: 150%;
+    font-family: 'Arvo', serif;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1) translateY(0px)
+    }
+
+    50% {
+        transform: scale(1.2) translateY(-400px)
+    }
+}
+
+.content {
+    padding: 5% 10%;
+    text-align: justify;
+    display: list-item;
+}
+
+
+#titEscape{
+    text-align: center;
+    padding-bottom: 2%;
+    font-size: 160%;
+    font-family: 'Fredoka', sans-serif;
+}
+
+#flecha{
+    margin-top: 10%;
+    
+}
+
+article{
+    width: 20%;
+    display: inline-block;
+    padding-right: 4.5%;
+}
+
+h2{
+    text-align: center;
+}
+
+.txt{
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.iconosNaro{
+    margin-left: 20%;
+}
+
+#arriba{
+    float: right;
+    width: 3%;
+    padding: 5px;
+}
+

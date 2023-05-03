@@ -1,0 +1,204 @@
+@charset "ISO-8859-1";
+
+fieldset{
+    border: none;
+}
+#Primer{
+    background-color: rgb(240, 240, 240);
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: baseline;
+    margin: 0 auto;
+    padding: 1%;
+    padding-left: 20%;
+}
+#Jone{
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+    width: 70%;
+    height: 30%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+#Jone img{
+    border-radius: 5px;
+}
+#vid{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+#grid{
+    color: rgb(255, 255, 255);
+    width: 55%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100%;
+    width: 20%;
+    height: 60%;
+    gap: 50px;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+#grid div{
+    text-align: center;
+    padding: 20px;
+}
+#grid img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    border: 3px solid #fff;
+}
+#grid .gray{
+    background-color: rgb(68, 68, 68);
+    border-radius: 5px;
+}
+#grid .red{
+    background-color: rgb(145, 43, 43);
+    border-radius: 5px;
+}
+
+h1{
+    flex: display;
+    
+    right: 0;
+    font-size: 60px;
+}
+
+.swiper-pagination{
+   position: relative;
+   bottom: 10%;
+}
+
+.swiper{
+    width: 950px;
+}
+section .card .image{
+    height: 140px;
+    width: 140px;
+    padding: 3px;
+    border-radius: 50%;
+    padding: 3px;
+}
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card{
+    position: relative;
+    border-radius: 20px;
+    background: rgb(211, 210, 210);
+    margin: 20px 0;
+    width: 280px;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    background: rgb(145, 43, 43);
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icons i{
+    margin-top: 10px;
+    color: #fff;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.card .media-icons i:hover{
+    opacity: 1;
+}
+.card .name-username{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+.name-username .name{
+    font-size: 24px;
+    font-weight: 600;
+}
+.name-username .username{
+    font-size: 15px;
+    font-weight: 600;
+}
+.name-username p{
+    font-size: 15px;
+    font-weight: 450;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+.card .rating .i{
+    font-size: 19px;
+    margin: 0 2px;
+    color: #987dff;
+}
+.card .button{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card .button button{
+    background: rgb(145, 43, 43);
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.button button:hover{
+    background: rgb(106, 21, 21);
+}
